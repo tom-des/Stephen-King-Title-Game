@@ -1,0 +1,107 @@
+body.red-fade {
+  animation-duration: 2s;
+  animation-name: red-fade;
+}
+#title.black-fade {
+  animation-duration: 2s;
+  animation-name: black-fade;
+}
+
+@keyframes black-fade {
+  from {
+    color: black;
+  }
+
+  to {
+    color: red;
+  }
+}
+
+@keyframes red-fade {
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: black;
+  }
+}
+
+#hard-mode {
+  cursor: pointer;
+}
+
+.hard-mode-input {
+  background-color: 'red';
+  color: 'white';
+}
+.hard-mode-input:focus {
+  outline: 2px white solid;
+}
+input:focus {
+  outline: 2px red solid;
+}
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: 'Courier New', monospace;
+  margin-top: 35px;
+}
+#title {
+  color: red;
+  margin: 20px;
+}
+p,
+h1,
+#input,
+#red-button,
+#white-button,
+#sub-text {
+  font-family: 'Courier New', monospace;
+}
+#sub-text {
+  color: white;
+}
+#input {
+  color: black;
+  text-transform: uppercase;
+  width: 400px;
+  max-width: 90%;
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+button {
+  width: 33%;
+  min-width: 100px;
+  margin: 2px;
+  padding: 5px;
+  font-weight: bold;
+}
+#red-button {
+  color: red;
+  background-color: black;
+  border: 2px red solid;
+}
+#red-button:hover {
+  background-color: red;
+  color: white;
+  border: 2px red solid;
+}
+#white-button {
+  color: white;
+  background-color: black;
+  border: 2px white solid;
+}
+#white-button:hover {
+  color: black;
+  background-color: white;
+  border: 2px white solid;
+}
+
+#scorecard {
+  margin: 30px;
+}
